@@ -1,12 +1,3 @@
-/* style.css */
-:root {
-    --terra-clara: #E8D9C7;
-    --terra-media: #C4B5A0;
-    --verde-militar: #5B7052;
-    --preto: #2A2A2A;
-    --branco: #FFFFFF;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +5,10 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.6;
-    color: var(--preto);
-    background-color: var(--branco);
+    color: #2A2A2A;
+    background-color: #eadfd1;
     font-weight: 400;
 }
 
@@ -27,9 +18,8 @@ body {
     padding: 0 20px;
 }
 
-/* Cabeçalho */
 header {
-    background-color: var(--branco);
+    background-color: #FFFFFF;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -46,7 +36,7 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--verde-militar);
+    color: #5B7052;
     text-decoration: none;
 }
 
@@ -61,19 +51,18 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: var(--preto);
+    color: #2A2A2A;
     font-weight: 500;
     transition: color 0.3s;
     font-size: 1.1rem;
 }
 
 nav a:hover {
-    color: var(--verde-militar);
+    color: #5B7052;
 }
 
-/* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--terra-clara) 0%, var(--branco) 100%);
+    background-color:#eadfd1;
     padding: 5rem 0;
     text-align: center;
 }
@@ -81,19 +70,19 @@ nav a:hover {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--preto);
+    color: #2A2A2A;
 }
 
 .hero p {
     font-size: 1.3rem;
     max-width: 700px;
     margin: 0 auto 2rem;
-    color: var(--preto);
+    color: #2A2A2A;
 }
 
 .destaque {
-    background-color: var(--verde-militar);
-    color: var(--branco);
+    background-color: #5B7052;
+    color: #FFFFFF;
     padding: 3rem;
     margin: 3rem 0;
     border-radius: 12px;
@@ -103,31 +92,31 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* Conteúdo */
 section {
     padding: 5rem 0;
 }
 
 h1, h2, h3 {
     font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--verde-militar);
+    margin-bottom: 2rem;
+    color: #5B7052;
 }
 
 h1 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 2rem;
-    border-bottom: 2px solid var(--terra-media);
+    border-bottom: 2px solid #C4B5A0;
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
 }
 
 h3 {
     font-size: 1.5rem;
-    color: var(--preto);
+    color: #2A2A2A;
 }
 
 p {
@@ -143,33 +132,36 @@ p {
     align-items: start;
 }
 
-/* Foto retangular vertical */
+.momento-content {
+    gap: 3rem;
+    align-items: center;
+}
+
 .foto-vertical {
     width: 100%;
     max-width: 300px;
     height: 400px;
-    background-color: var(--terra-clara);
+    background-color: #E8D9C7;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--verde-militar);
+    color: #5B7052;
     font-weight: 500;
     margin: 0 auto;
 }
 
-/* Depoimentos */
 .depoimento {
-    background-color: var(--branco);
+    background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 12px;
     margin-bottom: 2rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    border-left: 4px solid var(--verde-militar);
+    border-left: 4px solid #5B7052;
 }
 
 .depoimento h3 {
-    color: var(--verde-militar);
+    color: #5B7052;
     font-style: italic;
     margin-bottom: 1rem;
 }
@@ -179,7 +171,6 @@ p {
     line-height: 1.8;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     .sobre-content {
         grid-template-columns: 1fr;
